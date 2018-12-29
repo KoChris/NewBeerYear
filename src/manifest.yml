@@ -1,0 +1,4 @@
+---
+applications:
+- name: beeryear
+  buildpack: staticfile_buildpack

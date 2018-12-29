@@ -1,0 +1,14 @@
+
+
+.background-image {
+    width: 100%;
+    max-width: none;
+    
+    position: absolute;
+    top: -200px;
+}
+
+.background {
+    background-color: black;
+    color: black
+}

@@ -1,0 +1,20 @@
+
+language: node_js
+node_js:
+  - "node"
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng build
+  - cd dist/NewBeerYear
+
+deploy:
+  provider: cloudfoundry
+  username: chris.ko791@gmail.com
+  password: 
+    secure: "j6DKk2Ys+P7h9/y3sxk5iI8Yrt082+ie8QaTqOOB0yAQ2F1yvfiHo6vnIf/eAc/Lg9OC+ZRh6pTm5sPvk8spuuH0WjVwiD8fwPGVKvctK1txUI/qIh7uRKtrhEQeIFzd13a48cx44hEh3ujMQLrjht7BwfvdjiWjzhf6B2cb8XLk+4P5bn9XhuGyMRxFjq342CUdHVIOq/3xpLSDMS7toGATFFKOJWxTo2T33Ih2tKhOAKkheFovb1LWncePiZRAaDpQoL8IG+0ffc51P0ts2SzKl/ZBXyb0T7jRzURcoegcBABV4aWzSsUyKf4eNqI9plWIJfCNR1u0vB6UCIdqjFZNm4PZ5EnWZyT4nEcngdXQlbwVjWtxbD27xD4EHagSfUdiCI/gCMPLGUhiYeii0M+ZISiPthRH0YdgTs/9nySVCYtyfchJ9bBdxsGAH3nvyQEXQW+mGo8C8M+8WTw7m5J1D4w0UpjJ7aaWvohHlCRg6v8Ht9+v8M2Htl6RI8qiSohDzu8U5RL6WHnLWE0ZP0oT2ola9W515ItBZp74FwPkuMAmbTlOI1i891742JfmJy9OSA4X99AA9tBpes+n1FXn4hGYSWqQ+F/pNu1Lsal6wDWpLLtUIVF7aJkkCZp0tpaQ8dGrNWPocMWa1yAAR8d+bhecLOdheyxhLXSRT5g="
+  api: https://api.run.pivotal.io
+  organization: dataflow-test
+  space: development
