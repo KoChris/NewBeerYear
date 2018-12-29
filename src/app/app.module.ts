@@ -8,16 +8,12 @@ import { ChartsModule } from 'ng2-charts';
 import { NgxGaugeModule } from 'ngx-gauge';
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
-    NavbarComponent,
     DashboardComponent,
     OverviewComponent
   ],
