@@ -1,6 +1,8 @@
 
-.container-full {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-  }
+.beer-background-image {
+  width: 100%;
+  max-width: none;
+  
+  position: absolute;
+  top: -80px;
+}
