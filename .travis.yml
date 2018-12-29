@@ -1,15 +1,15 @@
 
-language: node_js
-node_js:
-  - "node"
+#language: node_js
+#node_js:
+#  - "node"
 
-before_script:
-  - npm install -g @angular/cli
+#before_script:
+#  - npm install -g @angular/cli
 
 script:
-  - ng build
-  - cd dist/NewBeerYear
-
+#  - ng build
+#  - cd dist/NewBeerYear
+  - cd Docs/example
 deploy:
   provider: cloudfoundry
   username: chris.ko791@gmail.com
